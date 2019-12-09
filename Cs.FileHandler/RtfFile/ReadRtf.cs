@@ -3,7 +3,7 @@ using System.IO;
 using System.Windows.Documents;
 using System.Windows.Forms;
 
-namespace Cs.FileHandler.RtfFile
+namespace FILEHANDLER.RtfFile
 {
     public class ReadRtfFileException : Exception
     {

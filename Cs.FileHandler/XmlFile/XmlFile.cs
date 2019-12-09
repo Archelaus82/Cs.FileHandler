@@ -14,7 +14,7 @@ using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace Cs.FileHandler.XmlFile
+namespace FILEHANDLER.XmlFile
 {
     /// <summary>
     /// 

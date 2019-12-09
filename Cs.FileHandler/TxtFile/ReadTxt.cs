@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace Cs.FileHandler.TxtFile
+namespace FILEHANDLER.TxtFile
 {
     public class ReadTxtFileException : Exception
     {

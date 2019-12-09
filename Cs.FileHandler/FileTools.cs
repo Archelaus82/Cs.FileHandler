@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Xml.Linq;
 using System.Security.Cryptography;
 
-namespace Cs.FileHandler
+namespace FILEHANDLER
 {
     public class FileToolsException : Exception
     {

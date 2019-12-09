@@ -1,9 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Reflection;
-using Cs.Extensions;
 
-namespace Cs.FileHandler.TxtFile
+namespace FILEHANDLER.TxtFile
 {
     public class WriteTxtFileException : Exception
     {
@@ -26,11 +25,10 @@ namespace Cs.FileHandler.TxtFile
     {
         public WriteTxtFile() { }
 
-        public WriteTxtFile(string filename, string text, bool appendDateTime)
+        public WriteTxtFile(string filename, string text)
         {
             try
             {
-                if (appendDateTime) filename.AppendDateTimeStamp();
                 File.WriteAllText(filename, text);
             }
             catch (Exception ex)
@@ -39,11 +37,10 @@ namespace Cs.FileHandler.TxtFile
             }
         }
 
-        public WriteTxtFile(string filename, string[] lines, bool appendDateTime)
+        public WriteTxtFile(string filename, string[] lines)
         {
             try
             {
-                if (appendDateTime) filename.AppendDateTimeStamp();
                 File.WriteAllLines(filename, lines);
             }
             catch (Exception ex)
