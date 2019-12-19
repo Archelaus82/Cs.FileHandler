@@ -38,14 +38,17 @@ namespace QC.ADDONS.FILEHANDLER
 
         public struct OptionValue
         {
-            public string option;
-            public string value;
+            string _option;
+            string _value;
 
             public OptionValue(string option, string value)
             {
-                this.option = option;
-                this.value = value;
+                _option = option;
+                _value = value;
             }
+            
+            public string Option { get { return _option; } }
+            public string Value { get { return _value; } }
         }
 
         public ConfigParser()
