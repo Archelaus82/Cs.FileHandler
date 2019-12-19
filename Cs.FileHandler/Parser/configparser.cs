@@ -261,7 +261,7 @@ namespace QC.ADDONS.FILEHANDLER
                         sw.WriteLine(String.Format("[{0}]", section));
                         foreach (OptionValue ov in Items(section))
                         {
-                            if (ov.value == "")
+                            if (String.IsNullOrEmpty(ov.value))
                                 sw.WriteLine(ov.option);
                             else
                                 sw.WriteLine(String.Format("{0} = {1}", ov.option, ov.value));
